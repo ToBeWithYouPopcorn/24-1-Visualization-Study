@@ -1,0 +1,3004 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.24.0115.0353                               -->
+<workbook original-version='18.1' source-build='2022.2.16 (20222.24.0115.0353)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column alias='우익수' caption='포지션별' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;RF&quot;'>
+        <calculation class='tableau' formula='&quot;RF&quot;' />
+        <aliases>
+          <alias key='&quot;1B&quot;' value='1루수' />
+          <alias key='&quot;2B&quot;' value='2루수' />
+          <alias key='&quot;3B&quot;' value='3루수' />
+          <alias key='&quot;C&quot;' value='포수' />
+          <alias key='&quot;CF&quot;' value='중견수' />
+          <alias key='&quot;DH&quot;' value='지명타자' />
+          <alias key='&quot;LF&quot;' value='좌익수' />
+          <alias key='&quot;RF&quot;' value='우익수' />
+          <alias key='&quot;SS&quot;' value='유격수' />
+        </aliases>
+        <members>
+          <member alias='중견수' value='&quot;CF&quot;' />
+          <member alias='좌익수' value='&quot;LF&quot;' />
+          <member alias='우익수' value='&quot;RF&quot;' />
+          <member alias='유격수' value='&quot;SS&quot;' />
+          <member alias='1루수' value='&quot;1B&quot;' />
+          <member alias='2루수' value='&quot;2B&quot;' />
+          <member alias='3루수' value='&quot;3B&quot;' />
+          <member alias='포수' value='&quot;C&quot;' />
+          <member alias='지명타자' value='&quot;DH&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='STATIZ 타자 WAR 순위(STATIZ 타자 WAR 순위 (KBO 타자 데이터))' inline='true' name='federated.0gcd3go1qbj4vj1d7ukis17mnrq1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='STATIZ 타자 WAR 순위 (KBO 타자 데이터)' name='excel-direct.18szm7m08e4o9119hckou1j20wii'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/JongJin/OneDrive/바탕 화면/태블로/해본 것/STATIZ 타자 WAR 순위 (KBO 타자 데이터).xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.18szm7m08e4o9119hckou1j20wii' name='STATIZ 타자 WAR 순위' table='[&apos;STATIZ 타자 WAR 순위$&apos;]' type='table'>
+          <columns gridOrigin='A1:AJ776:no:A1:AJ776:0' header='yes' outcome='2'>
+            <column datatype='integer' name='시즌' ordinal='0' />
+            <column datatype='integer' name='INDEX' ordinal='1' />
+            <column datatype='string' name='이름' ordinal='2' />
+            <column datatype='string' name='팀' ordinal='3' />
+            <column datatype='string' name='입단연도' ordinal='4' />
+            <column datatype='string' name='FA 계약여부' ordinal='5' />
+            <column datatype='real' name='WAR*' ordinal='6' />
+            <column datatype='integer' name='연봉 (단위: 만원)' ordinal='7' />
+            <column datatype='integer' name='출전 경기' ordinal='8' />
+            <column datatype='integer' name='타석' ordinal='9' />
+            <column datatype='integer' name='타수' ordinal='10' />
+            <column datatype='integer' name='득점' ordinal='11' />
+            <column datatype='integer' name='안타' ordinal='12' />
+            <column datatype='integer' name='2루타' ordinal='13' />
+            <column datatype='integer' name='3루타' ordinal='14' />
+            <column datatype='integer' name='홈런' ordinal='15' />
+            <column datatype='integer' name='루타' ordinal='16' />
+            <column datatype='integer' name='타점' ordinal='17' />
+            <column datatype='integer' name='도루' ordinal='18' />
+            <column datatype='integer' name='도실' ordinal='19' />
+            <column datatype='integer' name='볼넷' ordinal='20' />
+            <column datatype='integer' name='사구' ordinal='21' />
+            <column datatype='integer' name='고4' ordinal='22' />
+            <column datatype='integer' name='삼진' ordinal='23' />
+            <column datatype='integer' name='병살' ordinal='24' />
+            <column datatype='integer' name='희타' ordinal='25' />
+            <column datatype='integer' name='희비' ordinal='26' />
+            <column datatype='real' name='OBP (출루율)' ordinal='27' />
+            <column datatype='real' name='SLG (장타율)' ordinal='28' />
+            <column datatype='real' name='BA (타율)' ordinal='29' />
+            <column datatype='real' name='wOBA' ordinal='30' />
+            <column datatype='real' name='BABIP' ordinal='31' />
+            <column datatype='real' name='OPS' ordinal='32' />
+            <column datatype='real' name='wRC+' ordinal='33' />
+            <column datatype='real' name='WPA' ordinal='34' />
+            <column datatype='integer' name='다각형 Value' ordinal='35' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.18szm7m08e4o9119hckou1j20wii' name='STATIZ 타자 WAR 순위' table='[&apos;STATIZ 타자 WAR 순위$&apos;]' type='table'>
+          <columns gridOrigin='A1:AJ776:no:A1:AJ776:0' header='yes' outcome='2'>
+            <column datatype='integer' name='시즌' ordinal='0' />
+            <column datatype='integer' name='INDEX' ordinal='1' />
+            <column datatype='string' name='이름' ordinal='2' />
+            <column datatype='string' name='팀' ordinal='3' />
+            <column datatype='string' name='입단연도' ordinal='4' />
+            <column datatype='string' name='FA 계약여부' ordinal='5' />
+            <column datatype='real' name='WAR*' ordinal='6' />
+            <column datatype='integer' name='연봉 (단위: 만원)' ordinal='7' />
+            <column datatype='integer' name='출전 경기' ordinal='8' />
+            <column datatype='integer' name='타석' ordinal='9' />
+            <column datatype='integer' name='타수' ordinal='10' />
+            <column datatype='integer' name='득점' ordinal='11' />
+            <column datatype='integer' name='안타' ordinal='12' />
+            <column datatype='integer' name='2루타' ordinal='13' />
+            <column datatype='integer' name='3루타' ordinal='14' />
+            <column datatype='integer' name='홈런' ordinal='15' />
+            <column datatype='integer' name='루타' ordinal='16' />
+            <column datatype='integer' name='타점' ordinal='17' />
+            <column datatype='integer' name='도루' ordinal='18' />
+            <column datatype='integer' name='도실' ordinal='19' />
+            <column datatype='integer' name='볼넷' ordinal='20' />
+            <column datatype='integer' name='사구' ordinal='21' />
+            <column datatype='integer' name='고4' ordinal='22' />
+            <column datatype='integer' name='삼진' ordinal='23' />
+            <column datatype='integer' name='병살' ordinal='24' />
+            <column datatype='integer' name='희타' ordinal='25' />
+            <column datatype='integer' name='희비' ordinal='26' />
+            <column datatype='real' name='OBP (출루율)' ordinal='27' />
+            <column datatype='real' name='SLG (장타율)' ordinal='28' />
+            <column datatype='real' name='BA (타율)' ordinal='29' />
+            <column datatype='real' name='wOBA' ordinal='30' />
+            <column datatype='real' name='BABIP' ordinal='31' />
+            <column datatype='real' name='OPS' ordinal='32' />
+            <column datatype='real' name='wRC+' ordinal='33' />
+            <column datatype='real' name='WPA' ordinal='34' />
+            <column datatype='integer' name='다각형 Value' ordinal='35' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AJ776:no:A1:AJ776:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>시즌</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[시즌]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>시즌</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INDEX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[INDEX]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>INDEX</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>이름</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[이름]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>이름</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>팀</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[팀]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>팀</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>입단연도</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[입단연도]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>입단연도</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FA 계약여부</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FA 계약여부]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>FA 계약여부</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WAR*</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WAR*]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>WAR*</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연봉 (단위: 만원)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[연봉 (단위: 만원)]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>연봉 (단위: 만원)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>출전 경기</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[출전 경기]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>출전 경기</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>타석</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[타석]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>타석</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>타수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[타수]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>타수</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>득점</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[득점]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>득점</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>안타</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[안타]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>안타</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2루타</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2루타]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>2루타</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3루타</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3루타]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>3루타</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>홈런</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[홈런]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>홈런</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>루타</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[루타]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>루타</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>타점</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[타점]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>타점</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>도루</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[도루]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>도루</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>도실</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[도실]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>도실</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>볼넷</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[볼넷]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>볼넷</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>사구</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[사구]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>사구</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>고4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[고4]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>고4</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>삼진</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[삼진]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>삼진</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>병살</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[병살]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>병살</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>희타</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[희타]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>희타</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>희비</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[희비]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>희비</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBP (출루율)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OBP (출루율)]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>OBP (출루율)</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SLG (장타율)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SLG (장타율)]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>SLG (장타율)</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BA (타율)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BA (타율)]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>BA (타율)</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wOBA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wOBA]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>wOBA</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BABIP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BABIP]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>BABIP</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPS]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>OPS</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wRC+</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wRC+]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>wRC+</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WPA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WPA]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>WPA</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>다각형 Value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[다각형 Value]</local-name>
+            <parent-name>[STATIZ 타자 WAR 순위]</parent-name>
+            <remote-alias>다각형 Value</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ba (타율)' datatype='real' name='[BA (타율)]' role='measure' type='quantitative' />
+      <column caption='Babip' datatype='real' name='[BABIP]' role='measure' type='quantitative' />
+      <column caption='포지션' datatype='string' name='[Calculation_1036109390944935940]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ENDSWITH([팀], &apos;CF&apos;) = TRUE OR ENDSWITH([팀], &apos;RF&apos;) = TRUE OR ENDSWITH([팀], &apos;LF&apos;) = TRUE&#13;&#10;THEN &apos;외야&apos;&#13;&#10;ELSE &apos;내야&apos;&#13;&#10;END' />
+      </column>
+      <column caption='21시즌' datatype='string' name='[Calculation_1036109390945779717]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF STARTSWITH([팀], &apos;21&apos;) = TRUE&#13;&#10;THEN &apos;21&apos;&#13;&#10;ELSE &apos;NON-21&apos;&#13;&#10;END' />
+      </column>
+      <column caption='홈런 총합' datatype='integer' name='[Calculation_1036109390949687303]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([홈런])' />
+      </column>
+      <column caption='Fa 계약여부' datatype='string' name='[FA 계약여부]' role='dimension' type='nominal' />
+      <column caption='Index' datatype='integer' name='[INDEX]' role='measure' type='quantitative' />
+      <column caption='Obp (출루율)' datatype='real' name='[OBP (출루율)]' role='measure' type='quantitative' />
+      <column caption='Slg (장타율)' datatype='real' name='[SLG (장타율)]' role='measure' type='quantitative' />
+      <column caption='War*' datatype='real' name='[WAR*]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='STATIZ 타자 WAR 순위' datatype='table' name='[__tableau_internal_object_id__].[STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A]' role='measure' type='quantitative' />
+      <column caption='W Oba' datatype='real' name='[wOBA]' role='measure' type='quantitative' />
+      <column datatype='string' name='[팀]' role='dimension' type='nominal' />
+      <column caption='포지션(복사본)' datatype='string' name='[포지션(복사본)_1036109390947504134]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ENDSWITH([팀], &quot;CF&quot;)&#13;&#10;THEN &apos;중견수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;LF&quot;)&#13;&#10;THEN &apos;좌익수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;RF&quot;)&#13;&#10;THEN &apos;우익수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;SS&quot;)&#13;&#10;THEN &apos;유격수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;2B&quot;)&#13;&#10;THEN &apos;2루수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;1B&quot;)&#13;&#10;THEN &apos;1루수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;3B&quot;)&#13;&#10;THEN &apos;3루수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;DH&quot;)&#13;&#10;THEN &apos;지명타자&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;C&quot;)&#13;&#10;THEN &apos;포수&apos;&#13;&#10;END' />
+      </column>
+      <column datatype='integer' name='[홈런]' role='measure' type='quantitative' />
+      <column-instance column='[BA (타율)]' derivation='Avg' name='[avg:BA (타율):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[홈런]' derivation='Avg' name='[avg:홈런:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[팀]' derivation='None' name='[none:팀:nk]' pivot='key' type='nominal' />
+      <column-instance column='[포지션(복사본)_1036109390947504134]' derivation='None' name='[none:포지션(복사본)_1036109390947504134:nk]' pivot='key' type='nominal' />
+      <column-instance column='[홈런]' derivation='Sum' name='[sum:홈런:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:팀:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;16넥SS&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;16삼2B&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;16kCF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;16NRF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;17넥SS&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;17삼2B&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;17kC&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;17NDH&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;18넥RF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;18삼1B&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;18KDH&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;18NRF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;19롯3B&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;19키LF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;19KSS&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;19S2B&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;20롯3B&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;20키DH&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;20KSLF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;20S2B&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;21두LF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;21키3B&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;21KRF&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;21NSS&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;16넥1B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;16롯3B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;16한DH&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;16LSS&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;17넥2B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;17롯3B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;17한CF&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;17LCF&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;17SSS&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;18롯1B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;18한CF&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;18LS2B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;19두3B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;19삼LF&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;19K2B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;19N2B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;20두C&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;20삼LF&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;20한SS&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;20N2B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;21삼3B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;21한SS&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;21L1B&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;21N1B&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;16넥CF&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;16롯LF&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;16k1B&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;16NC&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;17넥DH&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;17롯k1B&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;17한SS&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;17N2B&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;18넥C&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;18롯DH&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;18K1B&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;18NC&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;19두RF&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;19키2B&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;19KDH&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;19NKLF&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;20두SC&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;20키2B&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;20KC&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;20NK3B&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;21삼LF&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;21KC&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;21LCF&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;21NDH&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;21LC&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;16두롯2B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;16삼DH&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;16kSS&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;16S3B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;17두한C&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;17삼DH&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;17KRF&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;17S1B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;18두3B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;18삼CF&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;18L1B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;18SC&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;19롯LF&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;19한3B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;19L3B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;19SDH&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;20롯LF&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;20한1B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;20L3B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;20SCF&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;21롯1B&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;21롯CF&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;21키LF&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;21SC&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;16두1B&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;16삼3B&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;16KDH&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;16NSS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;17두1B&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;17삼3B&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;17KCF&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;17NLF&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;18넥SS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;18삼2B&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;18KLF&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;18NSS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;19롯C&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;19키SS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;19L&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;19S3B&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;20롯C&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;20키LF&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;20KSS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;20S3B&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;21두RF&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;21키C&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;21KSS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;21S1B&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;16넥DH&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;16롯RF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;16k2B&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;16NCF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;17넥kDH&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;17롯LF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;17K1B&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;17N3B&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;18넥CF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;18롯LF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;18K2B&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;18NCF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;19두SS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;19키3B&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;19KLF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;19NLF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;20두SS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;20키3B&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;20KCF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;20NLF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;21두3B&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;21삼RF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;21KCF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;21NLF&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;21LSS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;16롯1B&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;16한C&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;16LLF&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;16SSS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;17롯1B&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;17한3B&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;17L3B&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;17SLF&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;18두RF&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;18한3B&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;18LLF&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;19두1B&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;19삼CF&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;19한SS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;19LSS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;20두2B&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;20삼CF&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;20한LF&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;20LSS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;21삼1B&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;21한CF&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;16넥2B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;16롯C&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;16한LF&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;16N1B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;17넥3B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;17롯C&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;17한DH&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;17LDH&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;18넥1B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;18롯3B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;18한DH&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;18LSS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;19두C&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;19삼RF&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;19K3B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;19N3B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;20두CF&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;20삼RF&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;20K1B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;20N3B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;21두1B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;21삼한1B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;21K1B&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;21N2B&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;16두RF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;16한2B&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;16LCF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;16SLF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;17두RF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;17한1B&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;17L1B&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;17SCF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;18두LF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;18삼SS&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;18LCF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;18SRF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;19삼3B&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;19한LF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;19LLF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;19SSS&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;20삼3B&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;20한CF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;20LLF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;20SSS&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;21롯LF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;21한3B&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;21LLF&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;21SRF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;16넥LF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;16롯SS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;16K3B&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;16NDH&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;17넥LF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;17롯RF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;17k2B&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;17NC&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;18넥DH&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;18롯RF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;18K3B&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;18NDH&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;19롯1B&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;19키C&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;19KNRF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;19NRF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;20롯1B&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;20키C&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;20KDH&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;20NRF&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;21두C&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;21삼SS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;21KDH&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;21NRF&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;16두C&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;16삼LF&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;16L1B&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;16SC&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;17두C&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;17삼LF&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;17KSC&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;17S2B&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;18두C&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;18삼DH&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;18L2B&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;18SCF&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;19롯RF&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;19한C&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;19LC&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;19SK1B&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;20롯RF&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;20한2B&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;20LC&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;20SDH&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;21롯2B&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;21롯DH&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;21키RF&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;21SCF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;16두CF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;16삼RF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;16L2B&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;16SCF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;17두CF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;17삼RF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;17KSCF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;17S3B&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;18두CF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;18삼LF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;18L3B&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;18SDH&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;19롯SS&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;19한CF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;19LCF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;19SLF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;20삼1B&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;20한3B&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;20LCF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;20SLF&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;21롯3B&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;21롯K2B&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;21키SS&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;21SDH&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;16두SS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;16한3B&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;16LDH&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;16SRF&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;17두SS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;17한2B&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;17L2B&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;17SDH&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;18두NLF&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;18한2B&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;18LDH&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;18SSS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;19삼C&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;19한RF&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;19LRF&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;20두1B&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;20삼C&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;20한DH&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;20LRF&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;21롯RF&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;21한C&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;21SSS&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;16롯2B&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;16한CF&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;16LRF&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;17넥1B&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;17롯2B&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;17한C&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;17LC&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;17SRF&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;18두SS&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;18한C&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;18LRF&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;19두2B&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;19삼DH&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;19K1B&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;19N1B&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;20두3B&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;20삼DH&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;20한RF&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;20N1B&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;21삼2B&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;21한LF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;16두2B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;16삼C&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;16kLF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;16S1B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;17두2B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;17삼C&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;17KDH&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;17NRF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;18두1B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;18삼3B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;18KRF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;18S2B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;19롯CF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;19한1B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;19L1B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;19SC&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;20롯CF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;20키RF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;20L1B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;20S한CF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;21키CF&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;21L3B&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;21N&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;21S2B&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;21LDH&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;16넥RF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;16삼1B&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;16kC&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;16NLF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;17넥RF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;17롯SS&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;17K3B&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;17NCF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;18넥LF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;18롯SS&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;18KC&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;18NLF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;19롯2B&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;19키CF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;19KRF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;19NSS&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;20롯2B&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;20키CF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;20KLF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;20NSS&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;21두CF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;21키1B&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;21KLF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;21NS2B&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;16넥3B&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;16롯CF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;16한RF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;16N2B&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;17넥C&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;17롯CF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;17한LF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;17LLF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;18넥2B&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;18롯C&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;18한LF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;18N2B&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;19두CF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;19삼SS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;19KC&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;19NC&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;20두LF&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;20삼SS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;20K2B&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;20NC&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;21삼C&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;21K2B&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;21L2B&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;21N3B&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;16두LF&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;16삼SS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;16LC&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;16SDH&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;17두LF&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;17삼SS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;17kSS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;17SC&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;18두DH&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;18삼RF&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;18LC&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;18SLF&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;19삼2B&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;19한DH&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;19LDH&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;19SRF&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;20삼2B&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;20한C&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;20LDH&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;20SRF&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;21롯KC&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;21한2B&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;21SN2B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;16두3B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;16삼CF&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;16kRF&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;16S2B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;17두3B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;17삼CF&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;17KLF&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;17NSS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;18두2B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;18삼C&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;18KSS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;18S3B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;19롯DH&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;19한2B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;19L2B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;19SCF&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;20롯DH&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;20키SS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;20L2B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;20SC&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;21두SS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;21롯C&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;21키L2B&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;21S3B&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;21LRF&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;16넥C&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;16롯DH&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;16한SS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;16N3B&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;17넥CF&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;17롯DH&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;17한RF&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;17LSS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;18넥3B&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;18롯CF&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;18한SS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;18N3B&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;19두LF&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;19키1B&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;19KCF&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;19NCF&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;20두RF&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;20키1B&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;20K3B&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;20NDH&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;21두2B&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;21삼CF&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;21K3B&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;21NC&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:포지션(복사본)_1036109390947504134:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;우익수&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;3루수&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;지명타자&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;좌익수&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;포수&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2루수&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;유격수&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1루수&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;중견수&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:Calculation_1036109390944010241:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:홈런:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:Calculation_1036109390944022531:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:BA (타율):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:홈런:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='STATIZ 타자 WAR 순위' id='STATIZ 타자 WAR 순위_180176BFCC1E43D48BD4D943B0C0BD9A'>
+            <properties context=''>
+              <relation connection='excel-direct.18szm7m08e4o9119hckou1j20wii' name='STATIZ 타자 WAR 순위' table='[&apos;STATIZ 타자 WAR 순위$&apos;]' type='table'>
+                <columns gridOrigin='A1:AJ776:no:A1:AJ776:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='시즌' ordinal='0' />
+                  <column datatype='integer' name='INDEX' ordinal='1' />
+                  <column datatype='string' name='이름' ordinal='2' />
+                  <column datatype='string' name='팀' ordinal='3' />
+                  <column datatype='string' name='입단연도' ordinal='4' />
+                  <column datatype='string' name='FA 계약여부' ordinal='5' />
+                  <column datatype='real' name='WAR*' ordinal='6' />
+                  <column datatype='integer' name='연봉 (단위: 만원)' ordinal='7' />
+                  <column datatype='integer' name='출전 경기' ordinal='8' />
+                  <column datatype='integer' name='타석' ordinal='9' />
+                  <column datatype='integer' name='타수' ordinal='10' />
+                  <column datatype='integer' name='득점' ordinal='11' />
+                  <column datatype='integer' name='안타' ordinal='12' />
+                  <column datatype='integer' name='2루타' ordinal='13' />
+                  <column datatype='integer' name='3루타' ordinal='14' />
+                  <column datatype='integer' name='홈런' ordinal='15' />
+                  <column datatype='integer' name='루타' ordinal='16' />
+                  <column datatype='integer' name='타점' ordinal='17' />
+                  <column datatype='integer' name='도루' ordinal='18' />
+                  <column datatype='integer' name='도실' ordinal='19' />
+                  <column datatype='integer' name='볼넷' ordinal='20' />
+                  <column datatype='integer' name='사구' ordinal='21' />
+                  <column datatype='integer' name='고4' ordinal='22' />
+                  <column datatype='integer' name='삼진' ordinal='23' />
+                  <column datatype='integer' name='병살' ordinal='24' />
+                  <column datatype='integer' name='희타' ordinal='25' />
+                  <column datatype='integer' name='희비' ordinal='26' />
+                  <column datatype='real' name='OBP (출루율)' ordinal='27' />
+                  <column datatype='real' name='SLG (장타율)' ordinal='28' />
+                  <column datatype='real' name='BA (타율)' ordinal='29' />
+                  <column datatype='real' name='wOBA' ordinal='30' />
+                  <column datatype='real' name='BABIP' ordinal='31' />
+                  <column datatype='real' name='OPS' ordinal='32' />
+                  <column datatype='real' name='wRC+' ordinal='33' />
+                  <column datatype='real' name='WPA' ordinal='34' />
+                  <column datatype='integer' name='다각형 Value' ordinal='35' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='21시즌 KBO 전체 포지션별 홈런 개수'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000'>&lt;</run>
+            <run fontcolor='#000000'>Sheet Name</run>
+            <run fontcolor='#000000'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='STATIZ 타자 WAR 순위(STATIZ 타자 WAR 순위 (KBO 타자 데이터))' name='federated.0gcd3go1qbj4vj1d7ukis17mnrq1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gcd3go1qbj4vj1d7ukis17mnrq1'>
+            <column caption='00' datatype='integer' name='[Calculation_1036109390944010241]' role='measure' type='quantitative' user:unnamed='21시즌 LG 타자 타율-홈런 (2)'>
+              <calculation class='tableau' formula='00' />
+            </column>
+            <column caption='00' datatype='integer' name='[Calculation_1036109390944022531]' role='measure' type='quantitative' user:unnamed='21시즌 LG 타자 타율-홈런 (2)'>
+              <calculation class='tableau' formula='00' />
+            </column>
+            <column caption='21시즌' datatype='string' name='[Calculation_1036109390945779717]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF STARTSWITH([팀], &apos;21&apos;) = TRUE&#13;&#10;THEN &apos;21&apos;&#13;&#10;ELSE &apos;NON-21&apos;&#13;&#10;END' />
+            </column>
+            <column caption='홈런 총합' datatype='integer' name='[Calculation_1036109390949687303]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([홈런])' />
+            </column>
+            <column-instance column='[Calculation_1036109390945779717]' derivation='None' name='[none:Calculation_1036109390945779717:nk]' pivot='key' type='nominal' />
+            <column-instance column='[포지션(복사본)_1036109390947504134]' derivation='None' name='[none:포지션(복사본)_1036109390947504134:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1036109390949687303]' derivation='User' name='[pcto:usr:Calculation_1036109390949687303:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_1036109390944010241]' derivation='Sum' name='[sum:Calculation_1036109390944010241:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1036109390944022531]' derivation='Sum' name='[sum:Calculation_1036109390944022531:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[홈런]' derivation='Sum' name='[sum:홈런:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[팀]' role='dimension' type='nominal' />
+            <column caption='포지션(복사본)' datatype='string' name='[포지션(복사본)_1036109390947504134]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ENDSWITH([팀], &quot;CF&quot;)&#13;&#10;THEN &apos;중견수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;LF&quot;)&#13;&#10;THEN &apos;좌익수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;RF&quot;)&#13;&#10;THEN &apos;우익수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;SS&quot;)&#13;&#10;THEN &apos;유격수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;2B&quot;)&#13;&#10;THEN &apos;2루수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;1B&quot;)&#13;&#10;THEN &apos;1루수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;3B&quot;)&#13;&#10;THEN &apos;3루수&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;DH&quot;)&#13;&#10;THEN &apos;지명타자&apos;&#13;&#10;ELSEIF ENDSWITH([팀], &quot;C&quot;)&#13;&#10;THEN &apos;포수&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[홈런]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:Calculation_1036109390945779717:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1036109390945779717:nk]' member='&quot;21&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:포지션(복사본)_1036109390947504134:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:포지션(복사본)_1036109390947504134:nk]' />
+              <groupfilter function='member' level='[none:포지션(복사본)_1036109390947504134:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:포지션(복사본)_1036109390947504134:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;지명타자&quot;</bucket>
+              <bucket>&quot;포수&quot;</bucket>
+              <bucket>&quot;1루수&quot;</bucket>
+              <bucket>&quot;2루수&quot;</bucket>
+              <bucket>&quot;3루수&quot;</bucket>
+              <bucket>&quot;유격수&quot;</bucket>
+              <bucket>&quot;좌익수&quot;</bucket>
+              <bucket>&quot;중견수&quot;</bucket>
+              <bucket>&quot;우익수&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:Calculation_1036109390945779717:nk]</column>
+            <column>[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:포지션(복사본)_1036109390947504134:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:Calculation_1036109390944022531:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:Calculation_1036109390944022531:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:Calculation_1036109390944010241:qk]' scope='cols' value='false' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:홈런:qk]' value='n#,##0&quot;개&quot;;-#,##0&quot;개&quot;' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <text column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:홈런:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:Calculation_1036109390944010241:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:포지션(복사본)_1036109390947504134:nk]' />
+              <wedge-size column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:홈런:qk]' />
+              <text column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:포지션(복사본)_1036109390947504134:nk]' />
+              <text column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:홈런:qk]' />
+              <text column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[pcto:usr:Calculation_1036109390949687303:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#000000' fontsize='12'><![CDATA[<[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:포지션(복사본)_1036109390947504134:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000'><![CDATA[<[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:홈런:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000'><![CDATA[<[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[pcto:usr:Calculation_1036109390949687303:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='8.0265865325927734' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:Calculation_1036109390944022531:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:홈런:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontsize='14'>21시즌 KBO 전체 포지션별 홈런 개수</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000'><![CDATA[총 <[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:홈런:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='size' value='6.110161304473877' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:Calculation_1036109390944010241:qk] + [federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[sum:Calculation_1036109390944022531:qk])</cols>
+      </table>
+      <simple-id uuid='{01D2E969-0BD1-47C6-8D91-1801EBE6752C}' />
+    </worksheet>
+    <worksheet name='21시즌 LG 타자 타율-홈런'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff'>&lt;</run>
+            <run fontcolor='#ffffff'>Sheet Name</run>
+            <run fontcolor='#ffffff'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='STATIZ 타자 WAR 순위(STATIZ 타자 WAR 순위 (KBO 타자 데이터))' name='federated.0gcd3go1qbj4vj1d7ukis17mnrq1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gcd3go1qbj4vj1d7ukis17mnrq1'>
+            <column caption='Ba (타율)' datatype='real' name='[BA (타율)]' role='measure' type='quantitative' />
+            <column-instance column='[BA (타율)]' derivation='Avg' name='[avg:BA (타율):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[홈런]' derivation='Avg' name='[avg:홈런:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[팀]' derivation='None' name='[none:팀:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[팀]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[홈런]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:팀:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:팀:nk]' member='&quot;21L1B&quot;' />
+              <groupfilter function='member' level='[none:팀:nk]' member='&quot;21L2B&quot;' />
+              <groupfilter function='member' level='[none:팀:nk]' member='&quot;21L3B&quot;' />
+              <groupfilter function='member' level='[none:팀:nk]' member='&quot;21LC&quot;' />
+              <groupfilter function='member' level='[none:팀:nk]' member='&quot;21LCF&quot;' />
+              <groupfilter function='member' level='[none:팀:nk]' member='&quot;21LDH&quot;' />
+              <groupfilter function='member' level='[none:팀:nk]' member='&quot;21LLF&quot;' />
+              <groupfilter function='member' level='[none:팀:nk]' member='&quot;21LRF&quot;' />
+              <groupfilter function='member' level='[none:팀:nk]' member='&quot;21LSS&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:팀:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;16LC&quot;</bucket>
+              <bucket>&quot;16L1B&quot;</bucket>
+              <bucket>&quot;16L2B&quot;</bucket>
+              <bucket>&quot;16LCF&quot;</bucket>
+              <bucket>&quot;21LDH&quot;</bucket>
+              <bucket>&quot;21LC&quot;</bucket>
+              <bucket>&quot;21L1B&quot;</bucket>
+              <bucket>&quot;21L2B&quot;</bucket>
+              <bucket>&quot;21LSS&quot;</bucket>
+              <bucket>&quot;21L3B&quot;</bucket>
+              <bucket>&quot;21LLF&quot;</bucket>
+              <bucket>&quot;21LCF&quot;</bucket>
+              <bucket>&quot;21LRF&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:팀:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:홈런:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:BA (타율):qk]' field-type='quantitative' max='0.35250914127423827' min='0.2' range-type='fixed' scope='rows' type='space' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:홈런:qk]' value='n#,##0&quot;개&quot;;-#,##0&quot;개&quot;' />
+            <format attr='text-format' field='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:BA (타율):qk]' value='n#,##0.000;-#,##0.000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:BA (타율):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[:Measure Names]' />
+              <text column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:BA (타율):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1864088773727417' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:홈런:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[:Measure Names]' />
+              <text column='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:홈런:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:BA (타율):qk] + [federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[avg:홈런:qk])</rows>
+        <cols>[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:팀:nk]</cols>
+      </table>
+      <simple-id uuid='{E01DF20C-9884-4894-9D7D-06EDBBFAC70D}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='21시즌 LG 타자 타율-홈런'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:팀:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9B34406C-42F6-46F9-8F55-A78DE0E27390}' />
+    </window>
+    <window class='worksheet' name='21시즌 KBO 전체 포지션별 홈런 개수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:포지션(복사본)_1036109390947504134:nk]' type='filter' />
+            <card param='[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:Calculation_1036109390945779717:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:Calculation_1036109390945779717:nk]</field>
+            <field>[federated.0gcd3go1qbj4vj1d7ukis17mnrq1].[none:포지션(복사본)_1036109390947504134:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F59AF7D8-588F-4196-A41A-E5A3218717CE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='21시즌 KBO 전체 포지션별 홈런 개수' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='21시즌 LG 타자 타율-홈런' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
