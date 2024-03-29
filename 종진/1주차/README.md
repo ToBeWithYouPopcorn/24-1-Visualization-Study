@@ -14,3 +14,11 @@
 
 **21시즌 KBO 전체 타자들의 포지션별 홈런 개수**
 - 1루수와 3루수, 우익수 등 코너 수비수들의 홈런 개수가 대체로 많은 걸 볼 수 있다.
+
+# ++참고할만한 태블로 퍼블릭
+
+https://public.tableau.com/app/profile/hnana/viz/Piechartinspiration/Introduction
+
+![Introduction](https://github.com/ToBeWithYouPopcorn/24-1-Visualization-Study/assets/154731662/fefa354a-08ee-4e08-b02a-8cae956d6cb5)
+
+- 파이차트를 활용한 다양한 차트를 볼 수 있음
