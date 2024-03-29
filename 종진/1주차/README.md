@@ -1,3 +1,5 @@
+태블로 퍼블릭 : https://public.tableau.com/app/profile/jongjin.kim/viz/1_17116867706900/21LG-?publish=yes
+
 # 1. 막대 차트 - 라인 차트 이중축
 
 ![21시즌 LG 타자 타율-홈런](https://github.com/ToBeWithYouPopcorn/24-1-Visualization-Study/assets/154731662/45933ab9-4555-485c-bf39-cdd8bea87686)
