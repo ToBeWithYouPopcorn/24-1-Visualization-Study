@@ -1,0 +1,1045 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.24.0202.0944                               -->
+<workbook original-version='18.1' source-build='2022.2.17 (20222.24.0202.0944)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Coffee_Chain_Sales' inline='true' name='federated.00pnby014twv3v0zxdd0u1duyn5o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Coffee_Chain_Sales' name='textscan.0hxganw0jwgvep1dgexby117y2yc'>
+            <connection class='textscan' directory='C:/Users/JongJin/OneDrive/바탕 화면/와이빅타/과제/0116 시각화' filename='Coffee_Chain_Sales .csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0hxganw0jwgvep1dgexby117y2yc' name='Coffee_Chain_Sales .csv' table='[Coffee_Chain_Sales #csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='Area Code' ordinal='0' />
+            <column datatype='integer' name='Cogs' ordinal='1' />
+            <column datatype='integer' name='DifferenceBetweenActualandTargetProfit' ordinal='2' />
+            <column datatype='date' name='Date' ordinal='3' />
+            <column datatype='integer' name='Inventory Margin' ordinal='4' />
+            <column datatype='integer' name='Margin' ordinal='5' />
+            <column datatype='string' name='Market_size' ordinal='6' />
+            <column datatype='string' name='Market' ordinal='7' />
+            <column datatype='integer' name='Marketing' ordinal='8' />
+            <column datatype='string' name='Product_line' ordinal='9' />
+            <column datatype='string' name='Product_type' ordinal='10' />
+            <column datatype='string' name='Product' ordinal='11' />
+            <column datatype='integer' name='Profit' ordinal='12' />
+            <column datatype='integer' name='Sales' ordinal='13' />
+            <column datatype='string' name='State' ordinal='14' />
+            <column datatype='integer' name='Target_cogs' ordinal='15' />
+            <column datatype='integer' name='Target_margin' ordinal='16' />
+            <column datatype='integer' name='Target_profit' ordinal='17' />
+            <column datatype='integer' name='Target_sales ' ordinal='18' />
+            <column datatype='integer' name='Total_expenses' ordinal='19' />
+            <column datatype='string' name='Type' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0hxganw0jwgvep1dgexby117y2yc' name='Coffee_Chain_Sales .csv' table='[Coffee_Chain_Sales #csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='Area Code' ordinal='0' />
+            <column datatype='integer' name='Cogs' ordinal='1' />
+            <column datatype='integer' name='DifferenceBetweenActualandTargetProfit' ordinal='2' />
+            <column datatype='date' name='Date' ordinal='3' />
+            <column datatype='integer' name='Inventory Margin' ordinal='4' />
+            <column datatype='integer' name='Margin' ordinal='5' />
+            <column datatype='string' name='Market_size' ordinal='6' />
+            <column datatype='string' name='Market' ordinal='7' />
+            <column datatype='integer' name='Marketing' ordinal='8' />
+            <column datatype='string' name='Product_line' ordinal='9' />
+            <column datatype='string' name='Product_type' ordinal='10' />
+            <column datatype='string' name='Product' ordinal='11' />
+            <column datatype='integer' name='Profit' ordinal='12' />
+            <column datatype='integer' name='Sales' ordinal='13' />
+            <column datatype='string' name='State' ordinal='14' />
+            <column datatype='integer' name='Target_cogs' ordinal='15' />
+            <column datatype='integer' name='Target_margin' ordinal='16' />
+            <column datatype='integer' name='Target_profit' ordinal='17' />
+            <column datatype='integer' name='Target_sales ' ordinal='18' />
+            <column datatype='integer' name='Total_expenses' ordinal='19' />
+            <column datatype='string' name='Type' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Area Code]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Area Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cogs]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Cogs</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DifferenceBetweenActualandTargetProfit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DifferenceBetweenActualandTargetProfit]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>DifferenceBetweenActualandTargetProfit</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inventory Margin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Inventory Margin]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Inventory Margin</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Margin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Margin]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Margin</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market_size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Market_size]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Market_size</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Market]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Market</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marketing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Marketing]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Marketing</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_line</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product_line]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Product_line</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product_type]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Product_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_cogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_cogs]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Target_cogs</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_margin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_margin]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Target_margin</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_profit]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Target_profit</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_sales </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_sales ]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Target_sales </remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_expenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_expenses]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Total_expenses</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+      <column caption='Difference Between Actualand Target Profit' datatype='integer' name='[DifferenceBetweenActualandTargetProfit]' role='measure' type='quantitative' />
+      <column caption='Market size' datatype='string' name='[Market_size]' role='dimension' type='nominal' />
+      <column caption='Product line' datatype='string' name='[Product_line]' role='dimension' type='nominal' />
+      <column caption='Product type' datatype='string' name='[Product_type]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Sales]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Target cogs' datatype='integer' name='[Target_cogs]' role='measure' type='quantitative' />
+      <column caption='Target margin' datatype='integer' name='[Target_margin]' role='measure' type='quantitative' />
+      <column caption='Target profit' datatype='integer' name='[Target_profit]' role='measure' type='quantitative' />
+      <column caption='Target sales' datatype='integer' name='[Target_sales ]' role='measure' type='quantitative' />
+      <column caption='Total expenses' datatype='integer' name='[Total_expenses]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Coffee_Chain_Sales .csv' datatype='table' name='[__tableau_internal_object_id__].[Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA]' role='measure' type='quantitative' />
+      <column-instance column='[Sales]' derivation='Sum' name='[cum:sum:Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[Product_type]' derivation='None' name='[none:Product_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Sales]' derivation='Sum' name='[pcdf:sum:Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Sales]' derivation='Sum' name='[pcto:sum:Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[avg:Calculation_2438136252464918530:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[avg:Calculation_2438136252465397764:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[sum:Calculation_2438136252464824321:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[sum:Calculation_2438136252464918530:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[sum:Calculation_2438136252465418245:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[sum:Calculation_2438136252465455110:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[usr:Calculation_2438136252465647629:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[usr:Calculation_2438136252465745934:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[usr:Calculation_2438136252465823759:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[usr:Calculation_2438136252465975312:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[cum:sum:Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcdf:sum:Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[sum:Sales:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Product_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Espresso&quot;</bucket>
+            </map>
+            <map to='#638b66'>
+              <bucket>&quot;Herbal Tea&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Coffee&quot;</bucket>
+            </map>
+            <map to='#ffda66'>
+              <bucket>&quot;Tea&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Product_type:nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#2c5985'>
+              <multibucket>
+                <bucket>&quot;Espresso&quot;</bucket>
+                <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#72b966'>
+              <multibucket>
+                <bucket>&quot;Herbal Tea&quot;</bucket>
+                <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b07aa1'>
+              <multibucket>
+                <bucket>&quot;Coffee&quot;</bucket>
+                <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f7d42a'>
+              <multibucket>
+                <bucket>&quot;Tea&quot;</bucket>
+                <bucket>&quot;[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Coffee_Chain_Sales .csv' id='Coffee_Chain_Sales .csv_B2D3C1AB17634DE4B38615E06323F7EA'>
+            <properties context=''>
+              <relation connection='textscan.0hxganw0jwgvep1dgexby117y2yc' name='Coffee_Chain_Sales .csv' table='[Coffee_Chain_Sales #csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='Area Code' ordinal='0' />
+                  <column datatype='integer' name='Cogs' ordinal='1' />
+                  <column datatype='integer' name='DifferenceBetweenActualandTargetProfit' ordinal='2' />
+                  <column datatype='date' name='Date' ordinal='3' />
+                  <column datatype='integer' name='Inventory Margin' ordinal='4' />
+                  <column datatype='integer' name='Margin' ordinal='5' />
+                  <column datatype='string' name='Market_size' ordinal='6' />
+                  <column datatype='string' name='Market' ordinal='7' />
+                  <column datatype='integer' name='Marketing' ordinal='8' />
+                  <column datatype='string' name='Product_line' ordinal='9' />
+                  <column datatype='string' name='Product_type' ordinal='10' />
+                  <column datatype='string' name='Product' ordinal='11' />
+                  <column datatype='integer' name='Profit' ordinal='12' />
+                  <column datatype='integer' name='Sales' ordinal='13' />
+                  <column datatype='string' name='State' ordinal='14' />
+                  <column datatype='integer' name='Target_cogs' ordinal='15' />
+                  <column datatype='integer' name='Target_margin' ordinal='16' />
+                  <column datatype='integer' name='Target_profit' ordinal='17' />
+                  <column datatype='integer' name='Target_sales ' ordinal='18' />
+                  <column datatype='integer' name='Total_expenses' ordinal='19' />
+                  <column datatype='string' name='Type' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Product Type별 매출 누계 영역 차트'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Coffee_Chain_Sales' name='federated.00pnby014twv3v0zxdd0u1duyn5o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00pnby014twv3v0zxdd0u1duyn5o'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Product type' datatype='string' name='[Product_type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Product_type]' derivation='Count' name='[cnt:Product_type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[cum:sum:Sales:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[Product_type]' derivation='None' name='[none:Product_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[pcdf:sum:Sales:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Date]' derivation='Quarter-Trunc' name='[tqr:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]' direction='DESC' using='[federated.00pnby014twv3v0zxdd0u1duyn5o].[cnt:Product_type:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.00pnby014twv3v0zxdd0u1duyn5o].[tqr:Date:qk]' scope='cols' value='분기' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.00pnby014twv3v0zxdd0u1duyn5o].[cum:sum:Sales:qk]' value='n#,##0&quot;M&quot;;-#,##0&quot;M&quot;' />
+            <format attr='text-format' field='[federated.00pnby014twv3v0zxdd0u1duyn5o].[tqr:Date:qk]' value='*14년 1분기' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]' />
+              <text column='[federated.00pnby014twv3v0zxdd0u1duyn5o].[cum:sum:Sales:qk]' />
+              <text column='[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcdf:sum:Sales:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#000000'><![CDATA[매출 누계 : <[federated.00pnby014twv3v0zxdd0u1duyn5o].[cum:sum:Sales:qk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#000000'><![CDATA[전분기 대비 : <[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcdf:sum:Sales:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run> &lt;</run>
+                <run>[federated.00pnby014twv3v0zxdd0u1duyn5o].[cum:sum:Sales:qk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcdf:sum:Sales:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00pnby014twv3v0zxdd0u1duyn5o].[cum:sum:Sales:qk]</rows>
+        <cols>[federated.00pnby014twv3v0zxdd0u1duyn5o].[tqr:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{B6BD7B81-BC9B-41D1-B88B-24AA5FBBDC45}' />
+    </worksheet>
+    <worksheet name='Product Type별 매출 총합'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Coffee_Chain_Sales' name='federated.00pnby014twv3v0zxdd0u1duyn5o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00pnby014twv3v0zxdd0u1duyn5o'>
+            <column caption='AVG(0.5)' datatype='real' name='[Calculation_2438136252465975312]' role='measure' type='quantitative' user:unnamed='시트 1'>
+              <calculation class='tableau' formula='AVG(0.5)' />
+            </column>
+            <column caption='Product type' datatype='string' name='[Product_type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Product_type]' derivation='None' name='[none:Product_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[pcto:sum:Sales:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2438136252465975312]' derivation='User' name='[usr:Calculation_2438136252465975312:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Espresso&quot;</bucket>
+              <bucket>&quot;Coffee&quot;</bucket>
+              <bucket>&quot;Herbal Tea&quot;</bucket>
+              <bucket>&quot;Tea&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.00pnby014twv3v0zxdd0u1duyn5o].[usr:Calculation_2438136252465975312:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.00pnby014twv3v0zxdd0u1duyn5o].[usr:Calculation_2438136252465975312:qk]' scope='cols' value='false' />
+            <format attr='render-fold-reversed' value='true' />
+            <encoding attr='space' class='0' field='[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]' field-type='quantitative' max='0.5' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]' value='11' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-label>
+              <formatted-text>
+                <run fontsize='10'><![CDATA[매출 : 총 <[federated.00pnby014twv3v0zxdd0u1duyn5o].[sum:Sales:qk]>M]]></run>
+                <run><![CDATA[
+<[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]' />
+              <text column='[federated.00pnby014twv3v0zxdd0u1duyn5o].[sum:Sales:qk]' />
+              <text column='[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]' />
+              <color column='[federated.00pnby014twv3v0zxdd0u1duyn5o].[:Measure Names]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='10'><![CDATA[매출 : 총 <[federated.00pnby014twv3v0zxdd0u1duyn5o].[sum:Sales:qk]>M]]></run>
+                <run><![CDATA[
+<[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00pnby014twv3v0zxdd0u1duyn5o].[usr:Calculation_2438136252465975312:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-label>
+              <formatted-text>
+                <run fontsize='10'><![CDATA[매출 : 총 <[federated.00pnby014twv3v0zxdd0u1duyn5o].[sum:Sales:qk]>M]]></run>
+                <run><![CDATA[
+<[federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]</rows>
+        <cols>([federated.00pnby014twv3v0zxdd0u1duyn5o].[pcto:sum:Sales:qk] + [federated.00pnby014twv3v0zxdd0u1duyn5o].[usr:Calculation_2438136252465975312:qk])</cols>
+      </table>
+      <simple-id uuid='{54A65002-A52B-4E09-BA5F-D6FAFDC165F0}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Product Type별 매출 총합'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='3' param='[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]&#10;[federated.00pnby014twv3v0zxdd0u1duyn5o].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.00pnby014twv3v0zxdd0u1duyn5o].[:Measure Names]</field>
+            <field>[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]</field>
+            <field>[federated.00pnby014twv3v0zxdd0u1duyn5o].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9CB789BA-A562-4109-930C-3896B0483558}' />
+    </window>
+    <window class='worksheet' name='Product Type별 매출 누계 영역 차트'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.00pnby014twv3v0zxdd0u1duyn5o].[none:Product_type:nk]</field>
+            <field>[federated.00pnby014twv3v0zxdd0u1duyn5o].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F5C53EC2-E3AD-4676-AB57-75C314346CB3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Product Type별 매출 누계 영역 차트' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Product Type별 매출 총합' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAANBUlEQVR4nO3dWXNUZ37H8e/pfd9b6hYI2WPhsYGBwVBeZpyLyZST8i0vIG/BufU7cPlq
+      buYueQW5ScWVcpVJlSupSkzKHi+sQggBQmhrqSV1t3o721yAYZJY3YIRZyDP73ODCvrpf58W
+      39Y5raMjy/d9HxFDhf7SD0DkLynQANrtdpDjRMYKNADtbcmLRrtAYjQFIEZTAGK0yI8ftNvt
+      576P3uv1nuv9izytxwFks9lABuZyuUDmiByEdoHEaApAjKYAxGiR8Tc5PJeu3mVjtx/kSJGR
+      Ag3g86+u829/WAxypMhI2gUSoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCj
+      KQAxmgIQox34bNDvvrlEsTZDrZzHD0WwPAePMLFoGMdx8D2XcDSBM+wRjiVwBj1iiRT2oEck
+      niQWCT/P7RB5JgcOwLFtQlaIG1d/oHzkNdrNNXxCWCEoFQpcuzZHplTB6neYOX6cxfkFXv3Z
+      KzR397AsOPHG689zO0SeyYF3gcLhMJ7vUalWaDab2MMBPmEy2QK1iQqlcpljR6eoVMo0t9tU
+      ynl22h2cYY9QONAfOxA5sAP/z3zr7V89/ngaaDQaVKvVJ//+1tmHH0xOHNqDE3nenvkg+E//
+      84u8rPQukBhNAYjRFIAYTQGI0RSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNECPU/Zbm/S
+      37wb5EiRkSw/wF/f3mq19Evy5IWiXSAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMVqg
+      3wle+MMc/p4T1DiRsQI9F2jl6j2259eDHCkyknaBxGgKQIymAMRoCkCMpgDEaApAjKYAxGgK
+      QIymAMRoCkCMpgDEaApAjKYAxGjPHMCw1+bGjRtst/Ye/93iwhyNjTXuPdAZn/JyeObToVeW
+      V3j19TfwOk2uXLlDIpXk/tIDyvkdEoUal/7rP8kUK/R2t4iky5z9xc8P83GLHIpnDiCdirO6
+      skrU65PO5rEdh6PT0xTTMaKpPFuNBvl0gt3tEBNFXQ5RXkzPHEB1aob47g6J9AS9vTbpbB7f
+      cwlZYIUjnD7xOuF4knKpiB+OH+ZjFjk0z/4TYZZFrlAEIPboT8JPDikyufzDD+KxZx4h8rzp
+      XSAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjBXp59NWdde6s3Apy
+      pMhIgf6CjFarRS6nnw2QF4d2gcRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaIGeCvHv
+      9y6yPFgKcqTISIEGsN5ZY6E9F+RIkZG0CyRGUwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBiNAUg
+      RlMAYjQFIEZTAGI0BSBGG3k26MLiIhOpCMNsjVC/RS6fp98bsLnZIJ0vUM5n2WrukE/C6l6E
+      Yszmu8vX+PnJMyTDPslMnm57h3g6S1K/LlVeQCMDaKwu07IgXunTXF+nmEsxiBbJR2wGuw3u
+      djps3LtFYfIosWyFXLHK1FSdQszl0rfXKFQnCQ06dP0Y7547HdQ2iRzYyABqR45RSUZoOhZu
+      scxkOY2XqjHcus92e490JkSuUAIrRDQcBiAajRGOxikUi9TKOVbXBiQj0UA2RuRpBXpt0H/4
+      6vfcaF8OapzIWDoIFqMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoC
+      EKMFenn0VCtHYW0yyJEiIwV6OnSr1SKXywU1TmQs7QKJ0RSAGE0BiNEUgBhNAYjRFIAYTQGI
+      0RSAGE0BiNECPRXC3fxHBlvfBjlSXjI3N37LVncmsHmBBuAP7+G7CkD2d/LNvyOc+01g87QL
+      JEZTAGI0BSBGUwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBiNAUgL5xut8vNmzfZ3d3Ftm22t7eZ
+      m5vjf1/AZHFxkY2NjT9rVqDnAokcxOrqKpubm8zPz3Pq1Ck++ugj9vb2+PTTTzl58iSO49Bo
+      NPjkk0+YnJzk448/ptfr8cUXX3D+/Hl++OEHLly4wMWLF+n1eszOznL79m1Onz7N9evXWV1d
+      5cKFC3z22Wf6CiAvpkQiwfLyMvF4nA8++IATJ06QSqVIJBJkMhk6nQ7VapVIJEK/3+fSpUu0
+      221s2+bs2bNYloVlWQBYlsXZs2f55ptvaDQazM7O8vnnnzM7O3u4F8ZqbTf49oervHHql8Rw
+      SOeL7O02iacLpJMxmnN/T8q9eFjj5P+h6PTv6PhvMz8/Tzqd5ujRo3z55Zd4nsc777xDqVTC
+      cRxs2+b7778nEonw3nvvEYlE2N7eZnV1lZ2dHTKZDNlsln6/T7/fx3Vdzp8/z/b2NvBwNyuV
+      Sh3+leFu3brJ9ESZ/748R6FUIWR32XPDvHvujAKQsaLTvyOc+yCweYd+DBCLxYnEExRyOSbL
+      edbWh6QSscMeIwZbXFxkaWmJUqnE1NQUhUKBr776inPnznHlyhUymQyO4zA5OUmtVht5X4ce
+      wMzMKwCcOXMagFqtftgjxHDFYpFer0e9Xqff7xOJRCiVSqRSKTKZDNFolMXFRZaXl/nwww8J
+      hfY/1NW7QPLSWVxcxLZtut0unucRjUa5c+cO0WiUhYUF3n//fc6cOcPCwsLY+wr06tA6BpBx
+      gj4G0NugYjQFIEZTAGI0BSBGUwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBitEBPhru19jrt5iDI
+      kfKSCT1Yx4p+Gdi8QE+Ga7Va5HK5oMaJjKVdIDGaAhCjKQAx2uODYMdxnvswz/MCmSNyUI8D
+      GA6Hz32YbdtPPcfzvJE/06k1WvPnrHkcQCqVeqo7fxaO4zz1nBfpydKa/+nHNxB/vADVi/TY
+      Drom8GOA4XCI57o4rovnefvezrFtHNfFHXO7P+U9ur3reQde82TOwdfY9hDX9Q782DzXxfN8
+      HHv4aL09dp3rOPi+z3AwwPd9HGf8LNd9uMZzXXzfx3acA6xx8Xwfx7bxfB/bHrfGx3n02Ozh
+      EN/zxn4u4clz9nAP4GDb8+PnZjgcHHx7HBvHcfG9R8/BmO0J9Bthg71tlu7uMnB9YrEI1WqN
+      yYky//f1w6exvkKzuUmjY3F8ZpL61BShka80Pks3vmbdL5OwhlRKFabqE6NfnXyba1evUShk
+      2djZY2pygqn65Jg1DtevXMEKQXsY5pWjE9Tr9ZGPrbm5gkOa5uYDGA7Y9mK8UqswNVXfd9ad
+      +XmOHn+NB0t3aO50SSTjlKsT1Ccq+65ZvrNI6cgMqzcvM4insW2PWrVKvbb/87CxskQsXWD5
+      /hKlXJqVnR7TkxXq9dpPr/F9bt+cZ3pmgis37hEOhUkmopSqdeoTpX2fg43VB3Q6bQZeBHvQ
+      JxqPUxmzPY2NFVp7Q+IRn2azhR9LUB+zPVuNdbZaA5L06QxtOk6YYyO2J9CvAJ7nksvlKVer
+      JKIR7i7M0bV/4oY+2I7LzOxJZiZzbDXWeLC2OfK+3X6bzd0eiWSaVCLJ2p1rNPtjXp19h6Ht
+      0LV9itk0G/dv0Wj1x6zxsMIR4pki9XKWzdX7rG21Ri7JZHN4jk0ylSFZKFPLJ9lcf8BqY3ff
+      NblcFte18awEvzj1BslUgrvXb9B199+mXC5Hv9Ok2e4RSWTIpxMsL95mt7f/cVc2l8O1h9i2
+      zZ4NlVyCteUlNnf2fnrzschnMwyHDtFojOpEhVgizu2rVxn1PX7HcZiarJIpFCiVKqRSCe7d
+      mKPruPuvsR2OHKnj+hHePHWSwqPt2enuP8m2bWoTBTabLfxoimo2wdqDJRr7bE+gXwGS2QpW
+      v0elUsVxqpTKFVLRn75tNBql1+tzZPoYg26HWKYw8r7DiRzn3/01Az+C5Tl0inkKiTF9h5Ic
+      f22GWKZAxPLplgpks4kxa2IcmZokkSkRDUOvVCSVy45c0ul08cNhirkMyVwJy3fp7ZVI5fP7
+      rnHw2Gt1iUbA9kIcOzpNMV8gFd5/m4aODbE0b7/3Hi4hfM+lWCiSS+5/Zb5er49rxZl99cnz
+      UC6WyOTT+6zwcS0f10pSq5aYqNXxXIdSoUh8xHMQjUYZhFJko33KR+o4tv1weyLhkWv29npE
+      IyEGts/09DFKxSK51P6TotEoAxvOvfM2tuuB71Mu7b89OhVCjKZvhInRdGlEeam5rotlhQiF
+      LHzfA0L8eKzr+/7Dt0ItC6wQvu/h+T4hK4Rl+XierwDkJebb/Os//wu/fPdXdHa28HrbFI6d
+      YtDrErbbpPJ5Ln87R7noM3Xir9m9fxUnbLHT8DlS6PFPF79WAPIyC3HixHEuf/c1g90d/Fga
+      //5/kCsWSTpd8rUpsqkEzdYWU0A0mSETGXBra4OfTU/zN3/7WwUgL7MQ4UiMX//Vb9hcX6FY
+      LBOLRVhtbBPxBkwcfYX2zjYxq04iBql8lrUdOPfWmxQLMVY2F/UukJjtj61yE2L2bQ6RAAAA
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
