@@ -1,0 +1,1090 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.24.0202.0944                               -->
+<workbook original-version='18.1' source-build='2022.2.17 (20222.24.0202.0944)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='구매목록(스타벅스 구매목록)' inline='true' name='federated.0pli35t1qers0p17ng24r1314vgh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='스타벅스 구매목록' name='excel-direct.0mwng8u06encin19rz2e30rjarzu'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/JongJin/OneDrive/바탕 화면/와이빅타/1학기/스터디/3주차/스타벅스 구매목록.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0mwng8u06encin19rz2e30rjarzu' name='구매목록' table='[구매목록$]' type='table'>
+          <columns gridOrigin='A1:E364:no:A1:E364:0' header='yes' outcome='2'>
+            <column datatype='integer' name='No' ordinal='0' />
+            <column datatype='string' name='아이템' ordinal='1' />
+            <column datatype='integer' name='원가격' ordinal='2' />
+            <column datatype='integer' name='결제금액' ordinal='3' />
+            <column datatype='string' name='쿠폰' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0mwng8u06encin19rz2e30rjarzu' name='구매목록' table='[구매목록$]' type='table'>
+          <columns gridOrigin='A1:E364:no:A1:E364:0' header='yes' outcome='2'>
+            <column datatype='integer' name='No' ordinal='0' />
+            <column datatype='string' name='아이템' ordinal='1' />
+            <column datatype='integer' name='원가격' ordinal='2' />
+            <column datatype='integer' name='결제금액' ordinal='3' />
+            <column datatype='string' name='쿠폰' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[구매목록]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E364:no:A1:E364:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No]</local-name>
+            <parent-name>[구매목록]</parent-name>
+            <remote-alias>No</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[구매목록_465FE766DFAA41D291DB58BCD0B795F1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>아이템</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[아이템]</local-name>
+            <parent-name>[구매목록]</parent-name>
+            <remote-alias>아이템</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[구매목록_465FE766DFAA41D291DB58BCD0B795F1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>원가격</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[원가격]</local-name>
+            <parent-name>[구매목록]</parent-name>
+            <remote-alias>원가격</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[구매목록_465FE766DFAA41D291DB58BCD0B795F1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>결제금액</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[결제금액]</local-name>
+            <parent-name>[구매목록]</parent-name>
+            <remote-alias>결제금액</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[구매목록_465FE766DFAA41D291DB58BCD0B795F1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>쿠폰</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[쿠폰]</local-name>
+            <parent-name>[구매목록]</parent-name>
+            <remote-alias>쿠폰</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[구매목록_465FE766DFAA41D291DB58BCD0B795F1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='구매목록' datatype='table' name='[__tableau_internal_object_id__].[구매목록_465FE766DFAA41D291DB58BCD0B795F1]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='구매목록' id='구매목록_465FE766DFAA41D291DB58BCD0B795F1'>
+            <properties context=''>
+              <relation connection='excel-direct.0mwng8u06encin19rz2e30rjarzu' name='구매목록' table='[구매목록$]' type='table'>
+                <columns gridOrigin='A1:E364:no:A1:E364:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='No' ordinal='0' />
+                  <column datatype='string' name='아이템' ordinal='1' />
+                  <column datatype='integer' name='원가격' ordinal='2' />
+                  <column datatype='integer' name='결제금액' ordinal='3' />
+                  <column datatype='string' name='쿠폰' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Coffee_Chain_Sales' inline='true' name='federated.09h5mr80pwzbmf1eu8nby1kig7ik' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Coffee_Chain_Sales' name='textscan.19zhjxh1ca1rps16xjv5b0zuofru'>
+            <connection class='textscan' directory='C:/Users/JongJin/OneDrive/바탕 화면/와이빅타/1학기/스터디/2주차' filename='Coffee_Chain_Sales .csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.19zhjxh1ca1rps16xjv5b0zuofru' name='Coffee_Chain_Sales .csv' table='[Coffee_Chain_Sales #csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='Area Code' ordinal='0' />
+            <column datatype='integer' name='Cogs' ordinal='1' />
+            <column datatype='integer' name='DifferenceBetweenActualandTargetProfit' ordinal='2' />
+            <column datatype='date' name='Date' ordinal='3' />
+            <column datatype='integer' name='Inventory Margin' ordinal='4' />
+            <column datatype='integer' name='Margin' ordinal='5' />
+            <column datatype='string' name='Market_size' ordinal='6' />
+            <column datatype='string' name='Market' ordinal='7' />
+            <column datatype='integer' name='Marketing' ordinal='8' />
+            <column datatype='string' name='Product_line' ordinal='9' />
+            <column datatype='string' name='Product_type' ordinal='10' />
+            <column datatype='string' name='Product' ordinal='11' />
+            <column datatype='integer' name='Profit' ordinal='12' />
+            <column datatype='integer' name='Sales' ordinal='13' />
+            <column datatype='string' name='State' ordinal='14' />
+            <column datatype='integer' name='Target_cogs' ordinal='15' />
+            <column datatype='integer' name='Target_margin' ordinal='16' />
+            <column datatype='integer' name='Target_profit' ordinal='17' />
+            <column datatype='integer' name='Target_sales ' ordinal='18' />
+            <column datatype='integer' name='Total_expenses' ordinal='19' />
+            <column datatype='string' name='Type' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.19zhjxh1ca1rps16xjv5b0zuofru' name='Coffee_Chain_Sales .csv' table='[Coffee_Chain_Sales #csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='Area Code' ordinal='0' />
+            <column datatype='integer' name='Cogs' ordinal='1' />
+            <column datatype='integer' name='DifferenceBetweenActualandTargetProfit' ordinal='2' />
+            <column datatype='date' name='Date' ordinal='3' />
+            <column datatype='integer' name='Inventory Margin' ordinal='4' />
+            <column datatype='integer' name='Margin' ordinal='5' />
+            <column datatype='string' name='Market_size' ordinal='6' />
+            <column datatype='string' name='Market' ordinal='7' />
+            <column datatype='integer' name='Marketing' ordinal='8' />
+            <column datatype='string' name='Product_line' ordinal='9' />
+            <column datatype='string' name='Product_type' ordinal='10' />
+            <column datatype='string' name='Product' ordinal='11' />
+            <column datatype='integer' name='Profit' ordinal='12' />
+            <column datatype='integer' name='Sales' ordinal='13' />
+            <column datatype='string' name='State' ordinal='14' />
+            <column datatype='integer' name='Target_cogs' ordinal='15' />
+            <column datatype='integer' name='Target_margin' ordinal='16' />
+            <column datatype='integer' name='Target_profit' ordinal='17' />
+            <column datatype='integer' name='Target_sales ' ordinal='18' />
+            <column datatype='integer' name='Total_expenses' ordinal='19' />
+            <column datatype='string' name='Type' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Area Code]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Area Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cogs]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Cogs</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DifferenceBetweenActualandTargetProfit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DifferenceBetweenActualandTargetProfit]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>DifferenceBetweenActualandTargetProfit</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inventory Margin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Inventory Margin]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Inventory Margin</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Margin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Margin]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Margin</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market_size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Market_size]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Market_size</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Market</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Market]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Market</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marketing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Marketing]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Marketing</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_line</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product_line]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Product_line</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product_type]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Product_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_cogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_cogs]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Target_cogs</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_margin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_margin]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Target_margin</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_profit]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Target_profit</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_sales </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_sales ]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Target_sales </remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_expenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_expenses]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Total_expenses</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Coffee_Chain_Sales .csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' default-format='*000' name='[Area Code]' role='dimension' semantic-role='[AreaCode].[Name]' type='ordinal' />
+      <column caption='Difference Between Actualand Target Profit' datatype='integer' name='[DifferenceBetweenActualandTargetProfit]' role='measure' type='quantitative' />
+      <column caption='Market size' datatype='string' name='[Market_size]' role='dimension' type='nominal' />
+      <column caption='Product line' datatype='string' name='[Product_line]' role='dimension' type='nominal' />
+      <column caption='Product type' datatype='string' name='[Product_type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Target cogs' datatype='integer' name='[Target_cogs]' role='measure' type='quantitative' />
+      <column caption='Target margin' datatype='integer' name='[Target_margin]' role='measure' type='quantitative' />
+      <column caption='Target profit' datatype='integer' name='[Target_profit]' role='measure' type='quantitative' />
+      <column caption='Target sales' datatype='integer' name='[Target_sales ]' role='measure' type='quantitative' />
+      <column caption='Total expenses' datatype='integer' name='[Total_expenses]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Coffee_Chain_Sales .csv' datatype='table' name='[__tableau_internal_object_id__].[Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0]' role='measure' type='quantitative' />
+      <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Type:nk]' type='palette'>
+            <map to='#3296ed'>
+              <bucket>&quot;Decaf&quot;</bucket>
+            </map>
+            <map to='#c398f5'>
+              <bucket>&quot;Regular&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Coffee_Chain_Sales .csv' id='Coffee_Chain_Sales .csv_E32087DC8A794D65ACEB5097F518DBE0'>
+            <properties context=''>
+              <relation connection='textscan.19zhjxh1ca1rps16xjv5b0zuofru' name='Coffee_Chain_Sales .csv' table='[Coffee_Chain_Sales #csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='Area Code' ordinal='0' />
+                  <column datatype='integer' name='Cogs' ordinal='1' />
+                  <column datatype='integer' name='DifferenceBetweenActualandTargetProfit' ordinal='2' />
+                  <column datatype='date' name='Date' ordinal='3' />
+                  <column datatype='integer' name='Inventory Margin' ordinal='4' />
+                  <column datatype='integer' name='Margin' ordinal='5' />
+                  <column datatype='string' name='Market_size' ordinal='6' />
+                  <column datatype='string' name='Market' ordinal='7' />
+                  <column datatype='integer' name='Marketing' ordinal='8' />
+                  <column datatype='string' name='Product_line' ordinal='9' />
+                  <column datatype='string' name='Product_type' ordinal='10' />
+                  <column datatype='string' name='Product' ordinal='11' />
+                  <column datatype='integer' name='Profit' ordinal='12' />
+                  <column datatype='integer' name='Sales' ordinal='13' />
+                  <column datatype='string' name='State' ordinal='14' />
+                  <column datatype='integer' name='Target_cogs' ordinal='15' />
+                  <column datatype='integer' name='Target_margin' ordinal='16' />
+                  <column datatype='integer' name='Target_profit' ordinal='17' />
+                  <column datatype='integer' name='Target_sales ' ordinal='18' />
+                  <column datatype='integer' name='Total_expenses' ordinal='19' />
+                  <column datatype='string' name='Type' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='State별 평균 profit'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Coffee_Chain_Sales' name='federated.09h5mr80pwzbmf1eu8nby1kig7ik' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09h5mr80pwzbmf1eu8nby1kig7ik'>
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Profit]' derivation='Avg' name='[avg:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[none:State:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Illinois&quot;</bucket>
+              <bucket>&quot;New York&quot;</bucket>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+              <bucket>&quot;California&quot;</bucket>
+              <bucket>&quot;Iowa&quot;</bucket>
+              <bucket>&quot;Texas&quot;</bucket>
+              <bucket>&quot;Colorado&quot;</bucket>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+              <bucket>&quot;Florida&quot;</bucket>
+              <bucket>&quot;Ohio&quot;</bucket>
+              <bucket>&quot;Oregon&quot;</bucket>
+              <bucket>&quot;Connecticut&quot;</bucket>
+              <bucket>&quot;Louisiana&quot;</bucket>
+              <bucket>&quot;Washington&quot;</bucket>
+              <bucket>&quot;Nevada&quot;</bucket>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+              <bucket>&quot;Utah&quot;</bucket>
+              <bucket>&quot;Missouri&quot;</bucket>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+              <bucket>&quot;New Mexico&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[avg:Profit:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[avg:Profit:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[avg:Profit:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[avg:Profit:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[avg:Profit:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[avg:Profit:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='size' value='0.58171272277832031' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[avg:Profit:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.8790607452392578' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#86bcb6' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09h5mr80pwzbmf1eu8nby1kig7ik].[avg:Profit:qk] + [federated.09h5mr80pwzbmf1eu8nby1kig7ik].[avg:Profit:qk])</rows>
+        <cols>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{14FC5F3E-7E6C-414F-AA6F-8C7CB82C23BD}' />
+    </worksheet>
+    <worksheet name='연도별 카페인/디카페인 profit 합계'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Coffee_Chain_Sales' name='federated.09h5mr80pwzbmf1eu8nby1kig7ik' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09h5mr80pwzbmf1eu8nby1kig7ik'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[pcto:sum:Profit:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[pcto:sum:Profit:qk:2]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]' value='N' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]' value='c#,##0&quot;$&quot;;-#,##0&quot;$&quot;' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[none:Type:nk]' />
+              <text column='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]' />
+              <text column='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[pcto:sum:Profit:qk:2]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk]</run>
+                <run>&gt;&#10;(&lt;</run>
+                <run>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[pcto:sum:Profit:qk:2]</run>
+                <run>&gt;)</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk] + [federated.09h5mr80pwzbmf1eu8nby1kig7ik].[sum:Profit:qk])</rows>
+        <cols>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{5697F12C-FC6D-4954-B74A-1E59DCF0C2E5}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='State별 평균 profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[none:State:nk]</field>
+            <field>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[none:Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B02F8ABB-9762-482A-979F-00286C6A5BE4}' />
+    </window>
+    <window class='worksheet' maximized='true' name='연도별 카페인/디카페인 profit 합계'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[none:Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[:Measure Names]</field>
+            <field>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[none:Type:nk]</field>
+            <field>[federated.09h5mr80pwzbmf1eu8nby1kig7ik].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2F6F1446-6BD9-4FFE-BBC9-883CD0997B81}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='State별 평균 profit' width='192'>
+      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
+      KVeTxMMtfPelf4Gu+VAVBU1RV36qKz9VRbnjl9ow8/z5iX9OIj+Hpmj83tN/wEsHX11VbRIA
+      seEqNYvPZkf4wfkfEwl2oWthFFT8viC4Lnz+hb/5n4qmqvg+/6drGrqqoakqOTPD8OJlXNfG
+      ditEAxH+4bHfJKTrhHQ/Dbq+Mv0Nr7kWJrkSLDZcwKdzbNc+fnD+KleWPkVVdPo7jvKHz/0J
+      juviuC41x6Hm2Fj2ys+abVNzHCzbxnacld8dm5pjAyaOW0NVfAS0GCF/G2dnpjAt6/NpHBzX
+      RVMUfJqGX9MI+HRCui5bAFE/6WKKD8ZPomt+vrL/JSKBxgdqp2bX+M+f/HvOXj1NNNTEH37x
+      jznYfgjXdbE+D07NsTEti3LNolytYtZqlK2qBEBsD67rUqgaBH1BdG31vdpkF0hsC4qi0Bi4
+      /xW4XAkWniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQ
+      niYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4m
+      ARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQ
+      niYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4mARCeJgEQniYBEJ4m
+      ARCeJgEQniYBEJ4mARCeJgEQniYBEJ7mu/ZLuVyuZx1C1MX1AIRCIaLR6EM3aNs2mqY9dDtr
+      2Zbruriui6o+/AZvM76/tWzLcRwAzyyrO7/LWoWCUcYol7AdB9e94W+ui3PT//h7NxaZzWYx
+      TRPbuXXaUrlEuVTmxr+YFfOWtjKZDFalSK5w9y1UrWpSc27/N0VRrn+gtarJ9Mzcynwdm5Jp
+      4tg1FhaXbnmd6zq4v/I+7/QhuDWTSu2uJd7idm1VywWGh4fJGve3Rb6xrUIuw2JqeaW9iknN
+      vv2CqfzK8oaVL/61ZVXIpplPZqiYJuBQLlVWXmdWuP2nf+eaABy7xvjYKJmswY0VXQtdxays
+      uq1rqmaR6ZnE9e/OtbZWW5fvjlOZWa7OmLgNDs16ANepYBGAqkFDKEjB9uPUauzr2Y1yhyZS
+      iWnKSpDWpkaKVZvWxgAlyyEcjmKk5zDdEH7K+PxhSlUL1bVobd9JNNJwvY3piSu0xqMU3QiJ
+      GYNYUxRH0SjkcrS3x1nMGDQFVSrlIpmKxs6ONgKagpFNE23dRawxdFNNibl5Oru6WJidAs1P
+      sWziVIuUrQC5TJporJma7VDMp4k2hlGCzWSzyxw+0HvXheqUllkoBSllk7R3tFMplgiHQyzO
+      z7Fz7yEioTsv6hv5QxGCoRC6W2Z4bJ72eBQVhbn5JeLxKDYBdnW03rWNpXSW7q6djA4P4fMF
+      CISCFMsVGoMaaDo5o0wsorO0XCAa1AjF2tkRj93aTiZLQIW5okFTUwP5TJlKtUhA91G2FWIR
+      P5bro1bMUrGhtX0H6aUk+/r68Gu3fivsapVcoQAkqZp5ShUXn1OhqviJBhTm0wVawj6CsR20
+      NTeuannNJRaJR3Uuj0wSDvqJRRqwrTJqMMrOHXdfTnC3LYCysuZUFIVq1ULVgwR0l3y+QD6b
+      oVK1mJq+ym1W7tdFmtsx82nmZ6eZX0gyN5cgvbiAquvEm+LEO1rI5wtk00kaW1op5bOUK9ZN
+      bcSbo+SKFq5pcGXsCul0hpnEAkuJGWZmZxkbnSBXMFA0Hzt3tLCYSDA6MU1+OcVSMkWhYFC9
+      YdPg1xWmZxLMXp1mejaB6zj4w43siIUpmlVSyQytbXFa4m2YxSypVJKh0fF7fxJA3jColQ1S
+      mQyZTJpMfpmJyQkWk8aqXn990SuQnJ/j6twCuVSSTCbDxOgwyWyemcTCPV/vWCbz83MUKjUM
+      wyBv5CkVDSqOilItMDY2RiZnoKpg5Evk8/nbtmNXTTKGSbVcoFAsY1WKTIyMYVQV2qJhMkYe
+      w8gRjjbR3BQjl1rgyvgohmnf/n2h0L23h6DfR94wyBsGPn8QXXUwjDyaClenJ5lN3Lo1vhOf
+      6jKTSNMYjRKLhqla1ZX3fIf3dEtN7ufb+Hw+vybHAEJsJXIaVHiaBEB4mgRAeJoEQHja/wes
+      P0huaLm6CwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='연도별 카페인/디카페인 profit 합계' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
